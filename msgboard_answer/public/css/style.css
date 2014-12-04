@@ -1,0 +1,27 @@
+body {
+	background-color: #ecf0f1;
+}
+
+.center {
+	width: 480px;
+	margin: 0 auto;
+}
+
+.forgot-password {
+	float: left;
+	margin-top: 10px;
+}
+
+.main {
+	padding: 100px 0;
+}
+
+.table-wrapper {
+	margin: 0 auto;
+	width: 600px;
+}
+
+
+.right {
+	text-align: right;
+}

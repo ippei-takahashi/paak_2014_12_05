@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>掲示板</title>
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/redmond/jquery-ui.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/flat-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 送信されたメッセージをリスト表示 -->
+    <ul id="messages" class="list-group">
+      <li class="list-group-item">
+        <p>テストさん</p>
+        <p>テストメッセージ</p>
+      </li>
+    </ul>
+    <!-- フォームの中身をサーバに送信 -->
+    <form name="form" action="/sendmsg" method="POST">
+      <span>名前：</span>
+      <div class="form-group">
+        <!-- nameを付けた要素の値が送られる -->
+        <input class="form-control" type="text" name="name" style="width: 200px;"/>
+      </div>
+      <span>内容：</span>
+      <div class="form-group">
+        <!-- nameを付けた要素の値が送られる -->
+        <textarea  class="form-control" name="body"></textarea>
+      </div>
+      <!-- formの中身を送信するボタン -->
+      <div class="btn btn-primary" onclick="document.form.submit();">送信</div>
+    </form>
+  </div>
+  <script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
